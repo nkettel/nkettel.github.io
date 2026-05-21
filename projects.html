@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nathan Kettel Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">NK Portfolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="reflection.html" class="nav-link">Reflection</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>My Projects</h1>
+        <p>Showcasing my programming skills and technical achievements</p>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem; color: #555;">
+                These projects demonstrate my ability to conceptualize, design, and build applications that solve real problems. Each project showcases different technical skills, problem-solving approaches, and lessons learned.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Personal Task Manager</h2>
+                        <span class="project-tag">Java</span>
+                    </div>
+                    <p class="project-description">A full-featured task management application built with Java and object-oriented programming principles. Features include task creation, categorization, priority levels, and persistent storage.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>User-friendly command-line interface for task management</li>
+                        <li>Object-oriented design with Task and TaskList classes</li>
+                        <li>File I/O implementation for data persistence</li>
+                        <li>Search and filter functionality by category or priority</li>
+                        <li>Automated reminders for upcoming tasks</li>
+                    </ul>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>Initially struggled with implementing file serialization for data persistence. Overcame this by learning about Java's Serializable interface and implementing proper error handling for file operations. This taught me the importance of considering data persistence from the design phase.</p>
+
+                    <h4>Lessons Learned:</h4>
+                    <p>This project reinforced the importance of clean architecture and separation of concerns. By creating distinct classes for business logic and UI, I made the code more maintainable and testable. I also learned valuable lessons about user experience—what might seem obvious to me as a programmer can be confusing to end users.</p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/nkettel/TaskManager" target="_blank" class="project-link">View Code on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Weather Web Application</h2>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <p class="project-description">A responsive web application that fetches real-time weather data and displays forecasts. Built with HTML, CSS, and JavaScript, integrating with a public weather API.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Real-time weather data using OpenWeatherMap API</li>
+                        <li>Responsive design that works on mobile and desktop</li>
+                        <li>Search functionality for multiple cities</li>
+                        <li>Dynamic weather icons and visual indicators</li>
+                        <li>5-day forecast with temperature and condition data</li>
+                        <li>Local storage to remember user preferences</li>
+                    </ul>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>Working with asynchronous API calls was initially challenging. I had to learn about promises and async/await syntax to properly handle API responses. Additionally, managing state across different parts of the application required careful planning to avoid "callback hell" and ensure clean code.</p>
+
+                    <h4>Lessons Learned:</h4>
+                    <p>This project taught me the importance of understanding API documentation and error handling. I learned that network requests can fail for various reasons, and building resilient applications requires anticipating these failures. I also gained appreciation for responsive design and the challenges of creating interfaces that work across different screen sizes.</p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/nkettel/WeatherApp" target="_blank" class="project-link">View Code on GitHub</a>
+                        <a href="https://nkettel.github.io/WeatherApp" target="_blank" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Student Grade Analyzer</h2>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <p class="project-description">A Python application that analyzes student grade data, generating statistics, visualizations, and reports. Demonstrates data structure usage and algorithm implementation.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>CSV file parsing and data validation</li>
+                        <li>Statistical analysis (mean, median, standard deviation)</li>
+                        <li>Data visualization with graphs and charts</li>
+                        <li>Grade distribution analysis and outlier detection</li>
+                        <li>Report generation with formatting and styling</li>
+                        <li>Sorting and filtering by various criteria</li>
+                    </ul>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>Handling edge cases in data analysis was more complex than expected. I had to implement robust validation to handle missing data, incorrect formats, and outliers. Learning to use data science libraries like Pandas and Matplotlib significantly improved the project's capability.</p>
+
+                    <h4>Lessons Learned:</h4>
+                    <p>This project demonstrated the power of using appropriate libraries rather than reinventing the wheel. I learned to balance between building from scratch for learning and using established libraries for efficiency. It also reinforced the importance of data validation and error handling.</p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/nkettel/GradeAnalyzer" target="_blank" class="project-link">View Code on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Social Media Dashboard</h2>
+                        <span class="project-tag">React.js</span>
+                    </div>
+                    <p class="project-description">A modern, responsive dashboard built with React that displays user data, posts, and activity feeds. Demonstrates component-based architecture and state management.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Component-based React architecture</li>
+                        <li>State management with React hooks</li>
+                        <li>Responsive grid layout for different screen sizes</li>
+                        <li>Real-time data updates with simulated API calls</li>
+                        <li>User profile and activity tracking</li>
+                        <li>Dark mode toggle functionality</li>
+                    </ul>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>Managing component state became complex as the application grew. Initially, I passed props through multiple levels (prop drilling). Learning about Context API and state management patterns helped me refactor and improve the code structure significantly.</p>
+
+                    <h4>Lessons Learned:</h4>
+                    <p>This project taught me the importance of thinking in components and managing data flow effectively. I learned that good architecture decisions early in a project prevent significant refactoring later. It also reinforced that front-end development requires deep consideration of user experience and responsive design.</p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/nkettel/SocialDashboard" target="_blank" class="project-link">View Code on GitHub</a>
+                        <a href="https://nkettel-social-dashboard.netlify.app" target="_blank" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <h2>My Development Journey Through Projects</h2>
+                
+                <p>These four projects represent my evolution as a programmer. Starting with foundational Java skills for desktop applications, progressing to web technologies with JavaScript and React, and incorporating data analysis with Python, each project has been a stepping stone in my learning journey.</p>
+
+                <p><strong>What these projects taught me:</strong></p>
+                <ul class="growth-list">
+                    <li><strong>Architecture Matters:</strong> Good design decisions early prevent technical debt later</li>
+                    <li><strong>User Experience is Critical:</strong> The best code means nothing if users can't or won't use it</li>
+                    <li><strong>Testing is Essential:</strong> Building tests as you develop catches bugs early and builds confidence</li>
+                    <li><strong>Documentation Saves Time:</strong> Well-documented code is significantly easier to maintain and enhance</li>
+                    <li><strong>Debugging is a Skill:</strong> Learning effective debugging techniques is as important as learning languages</li>
+                    <li><strong>Collaboration Improves Code:</strong> Code reviews and peer feedback lead to better solutions</li>
+                    <li><strong>Version Control is Non-Negotiable:</strong> Git has saved me countless times and is essential for any project</li>
+                    <li><strong>Performance Matters:</strong> Writing code is just the first step; optimization and efficiency are crucial</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nathan Kettel. All rights reserved.</p>
+        <p><a href="https://github.com/nkettel" target="_blank">GitHub</a> | Portfolio for AP Computer Science</p>
+    </footer>
+</body>
+</html>
