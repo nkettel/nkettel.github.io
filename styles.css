@@ -89,7 +89,7 @@ body {
 /* ===== HERO SECTION ===== */
 .hero {
     background: linear-gradient(135deg, rgba(15, 52, 96, 0.9) 0%, rgba(26, 95, 122, 0.9) 50%, rgba(22, 33, 62, 0.9) 100%),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="mountains" x="0" y="0" width="400" height="300" patternUnits="userSpaceOnU[...]
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="mountains" x="0" y="0" width="400" height="300" patternUnits="userSpaceOnU[...]')
     color: white;
     padding: 100px 20px;
     text-align: center;
