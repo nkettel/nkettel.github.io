@@ -97,17 +97,52 @@
             color: #00ff88;
         }
 
-        /* Other projects section */
-        .other-projects-section {
+        /* Project summary section */
+        .project-summary-section {
             background: linear-gradient(180deg, rgba(22, 33, 62, 0.8) 0%, rgba(26, 95, 122, 0.8) 50%, rgba(15, 52, 96, 0.8) 100%);
             padding: 60px 20px;
         }
 
-        .other-projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+        .project-summary {
+            max-width: 900px;
+            margin: 0 auto;
+            color: #e0e0e0;
+        }
+
+        .project-summary h2 {
+            color: #00ff88;
+            font-size: 2.2rem;
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-summary p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-summary strong {
+            color: #00ff88;
+        }
+
+        .growth-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .growth-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .growth-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #00ff88;
         }
     </style>
 </head>
@@ -128,6 +163,27 @@
     <section class="page-header">
         <h1>My Projects</h1>
         <p>Showcasing my programming skills and technical achievements</p>
+    </section>
+
+    <!-- Project Summary Section -->
+    <section class="project-summary-section">
+        <div class="project-summary">
+            <h2>My Development Journey Through Projects</h2>
+            
+            <p>These projects represent my evolution as a programmer. Starting with game development using Python and CMU Graphics, progressing through foundational Java skills for desktop applications, and expanding into web technologies like JavaScript and React. Each project challenged me in different ways and taught me valuable lessons about software design, user experience, and the importance of clean, maintainable code.</p>
+
+            <p><strong>What these projects taught me:</strong></p>
+            <ul class="growth-list">
+                <li><strong>Game Physics & Collision Detection:</strong> Understanding coordinate systems and real-time collision detection</li>
+                <li><strong>Architecture Matters:</strong> Good design decisions early prevent technical debt later</li>
+                <li><strong>User Experience is Critical:</strong> The best code means nothing if users can't or won't use it</li>
+                <li><strong>Testing is Essential:</strong> Building tests as you develop catches bugs early and builds confidence</li>
+                <li><strong>Documentation Saves Time:</strong> Well-documented code is significantly easier to maintain and enhance</li>
+                <li><strong>Debugging is a Skill:</strong> Learning effective debugging techniques is as important as learning languages</li>
+                <li><strong>Collaboration Improves Code:</strong> Code reviews and peer feedback lead to better solutions</li>
+                <li><strong>Performance Matters:</strong> Writing code is just the first step; optimization and efficiency are crucial</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Game Containers Section - First Row -->
@@ -195,153 +251,6 @@
                 <div class="tank-game-iframe-wrapper">
                     <iframe src="https://academy.cs.cmu.edu/sharing/orangeRedAnt8890/embed"></iframe>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Other Projects Section -->
-    <section class="other-projects-section">
-        <div class="container">
-            <h2 style="color: #00ff88; text-align: center; font-size: 2.2rem; text-shadow: 0 0 15px rgba(0, 255, 136, 0.6); margin-bottom: 20px;">Other Notable Projects</h2>
-            <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem; color: #e0e0e0;">
-                Beyond the tank game, I've developed various applications showcasing different technical skills and programming paradigms.
-            </p>
-
-            <div class="other-projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h2>Personal Task Manager</h2>
-                        <span class="project-tag">Java</span>
-                    </div>
-                    <p class="project-description">A full-featured task management application built with Java and object-oriented programming principles. Features include task creation, categori[...]
-                    
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>User-friendly command-line interface for task management</li>
-                        <li>Object-oriented design with Task and TaskList classes</li>
-                        <li>File I/O implementation for data persistence</li>
-                        <li>Search and filter functionality by category or priority</li>
-                        <li>Automated reminders for upcoming tasks</li>
-                    </ul>
-
-                    <h4>Challenges & Solutions:</h4>
-                    <p>Initially struggled with implementing file serialization for data persistence. Overcame this by learning about Java's Serializable interface and implementing proper error h[...]
-
-                    <h4>Lessons Learned:</h4>
-                    <p>This project reinforced the importance of clean architecture and separation of concerns. By creating distinct classes for business logic and UI, I made the code more mainta[...]
-
-                    <div class="project-links">
-                        <a href="https://github.com/nkettel/TaskManager" target="_blank" class="project-link">View Code on GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h2>Weather Web Application</h2>
-                        <span class="project-tag">JavaScript</span>
-                    </div>
-                    <p class="project-description">A responsive web application that fetches real-time weather data and displays forecasts. Built with HTML, CSS, and JavaScript, integrating with [...]
-                    
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>Real-time weather data using OpenWeatherMap API</li>
-                        <li>Responsive design that works on mobile and desktop</li>
-                        <li>Search functionality for multiple cities</li>
-                        <li>Dynamic weather icons and visual indicators</li>
-                        <li>5-day forecast with temperature and condition data</li>
-                        <li>Local storage to remember user preferences</li>
-                    </ul>
-
-                    <h4>Challenges & Solutions:</h4>
-                    <p>Working with asynchronous API calls was initially challenging. I had to learn about promises and async/await syntax to properly handle API responses.</p>
-
-                    <h4>Lessons Learned:</h4>
-                    <p>This project taught me the importance of understanding API documentation and error handling. I learned that network requests can fail for various reasons.</p>
-
-                    <div class="project-links">
-                        <a href="https://github.com/nkettel/WeatherApp" target="_blank" class="project-link">View Code on GitHub</a>
-                        <a href="https://nkettel.github.io/WeatherApp" target="_blank" class="project-link">Live Demo</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h2>Student Grade Analyzer</h2>
-                        <span class="project-tag">Python</span>
-                    </div>
-                    <p class="project-description">A Python application that analyzes student grade data, generating statistics, visualizations, and reports. Demonstrates data structure usage and[...]
-                    
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>CSV file parsing and data validation</li>
-                        <li>Statistical analysis (mean, median, standard deviation)</li>
-                        <li>Data visualization with graphs and charts</li>
-                        <li>Grade distribution analysis and outlier detection</li>
-                        <li>Report generation with formatting and styling</li>
-                        <li>Sorting and filtering by various criteria</li>
-                    </ul>
-
-                    <h4>Challenges & Solutions:</h4>
-                    <p>Handling edge cases in data analysis was more complex than expected. I had to implement robust validation to handle missing data, incorrect formats, and outliers.</p>
-
-                    <h4>Lessons Learned:</h4>
-                    <p>This project demonstrated the power of using appropriate libraries rather than reinventing the wheel. I learned to balance between building from scratch for learning and us[...]
-
-                    <div class="project-links">
-                        <a href="https://github.com/nkettel/GradeAnalyzer" target="_blank" class="project-link">View Code on GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h2>Social Media Dashboard</h2>
-                        <span class="project-tag">React.js</span>
-                    </div>
-                    <p class="project-description">A modern, responsive dashboard built with React that displays user data, posts, and activity feeds. Demonstrates component-based architecture an[...]
-                    
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>Component-based React architecture</li>
-                        <li>State management with React hooks</li>
-                        <li>Responsive grid layout for different screen sizes</li>
-                        <li>Real-time data updates with simulated API calls</li>
-                        <li>User profile and activity tracking</li>
-                        <li>Dark mode toggle functionality</li>
-                    </ul>
-
-                    <h4>Challenges & Solutions:</h4>
-                    <p>Managing component state became complex as the application grew. Initially, I passed props through multiple levels (prop drilling). Learning about Context API solved this.<[...]
-
-                    <h4>Lessons Learned:</h4>
-                    <p>This project taught me the importance of thinking in components and managing data flow effectively. Good architecture decisions early prevent significant refactoring later.[...]
-
-                    <div class="project-links">
-                        <a href="https://github.com/nkettel/SocialDashboard" target="_blank" class="project-link">View Code on GitHub</a>
-                        <a href="https://nkettel-social-dashboard.netlify.app" target="_blank" class="project-link">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-summary">
-                <h2>My Development Journey Through Projects</h2>
-                
-                <p>These projects represent my evolution as a programmer. Starting with game development using Python and CMU Graphics, progressing through foundational Java skills for desktop ap[...]
-
-                <p><strong>What these projects taught me:</strong></p>
-                <ul class="growth-list">
-                    <li><strong>Game Physics & Collision Detection:</strong> Understanding coordinate systems and real-time collision detection</li>
-                    <li><strong>Architecture Matters:</strong> Good design decisions early prevent technical debt later</li>
-                    <li><strong>User Experience is Critical:</strong> The best code means nothing if users can't or won't use it</li>
-                    <li><strong>Testing is Essential:</strong> Building tests as you develop catches bugs early and builds confidence</li>
-                    <li><strong>Documentation Saves Time:</strong> Well-documented code is significantly easier to maintain and enhance</li>
-                    <li><strong>Debugging is a Skill:</strong> Learning effective debugging techniques is as important as learning languages</li>
-                    <li><strong>Collaboration Improves Code:</strong> Code reviews and peer feedback lead to better solutions</li>
-                    <li><strong>Performance Matters:</strong> Writing code is just the first step; optimization and efficiency are crucial</li>
-                </ul>
             </div>
         </div>
     </section>
