@@ -6,15 +6,23 @@
     <title>Projects - Nathan Kettel Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Tank game specific styling */
-        .tank-game-section {
+        /* Game containers section */
+        .game-containers-section {
             background: linear-gradient(180deg, rgba(22, 33, 62, 0.8) 0%, rgba(26, 95, 122, 0.8) 50%, rgba(15, 52, 96, 0.8) 100%);
             padding: 40px 20px;
         }
 
-        .tank-game-container {
-            max-width: 470px;
+        .game-containers-wrapper {
+            max-width: 1000px;
             margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tank-game-container {
+            width: 470px;
             background: #000;
             border-radius: 10px;
             overflow: hidden;
@@ -122,45 +130,46 @@
         <p>Showcasing my programming skills and technical achievements</p>
     </section>
 
-    <!-- Tank Game Section - Full Width -->
-    <section class="tank-game-section">
-        <div class="tank-game-container">
-            <div class="tank-game-header">
-                <h2>Tank Battle Game</h2>
-                <p>A 4-player competitive tank battle game inspired by Arras.io. Built with Python and CMU Graphics featuring real-time game physics and collision detection.</p>
-            </div>
-            <div class="tank-game-iframe-wrapper">
-                <iframe src="https://academy.cs.cmu.edu/sharing/forestGreenPanda7667/embed"></iframe>
-            </div>
-            <div class="tank-game-controls">
-                <h4>🎮 Game Controls:</h4>
-                <div class="controls-grid">
-                    <div class="control-set">
-                        <strong>Blue (P1):</strong> W/A/S/D move, E/R rotate, Q shoot
-                    </div>
-                    <div class="control-set">
-                        <strong>Red (P2):</strong> Y/G/H/J move, U/I rotate, T shoot
-                    </div>
-                    <div class="control-set">
-                        <strong>Green (P3):</strong> P/L/;/' move, [/] rotate, O shoot
-                    </div>
-                    <div class="control-set">
-                        <strong>Pink (P4):</strong> Arrow keys move, ./​/ rotate, Enter shoot
+    <!-- Game Containers Section - Side by Side -->
+    <section class="game-containers-section">
+        <div class="game-containers-wrapper">
+            <!-- Tank Game Container -->
+            <div class="tank-game-container">
+                <div class="tank-game-header">
+                    <h2>Tank Battle Game</h2>
+                    <p>A 4-player competitive tank battle game inspired by Arras.io. Built with Python and CMU Graphics featuring real-time game physics and collision detection.</p>
+                </div>
+                <div class="tank-game-iframe-wrapper">
+                    <iframe src="https://academy.cs.cmu.edu/sharing/dimGrayElephant590868"></iframe>
+                </div>
+                <div class="tank-game-controls">
+                    <h4>🎮 Game Controls:</h4>
+                    <div class="controls-grid">
+                        <div class="control-set">
+                            <strong>Blue (P1):</strong> W/A/S/D move, E/R rotate, Q shoot
+                        </div>
+                        <div class="control-set">
+                            <strong>Red (P2):</strong> Y/G/H/J move, U/I rotate, T shoot
+                        </div>
+                        <div class="control-set">
+                            <strong>Green (P3):</strong> P/L/;/' move, [/] rotate, O shoot
+                        </div>
+                        <div class="control-set">
+                            <strong>Pink (P4):</strong> Arrow keys move, ./​/ rotate, Enter shoot
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Second Canvas Project Section -->
-    <section class="tank-game-section">
-        <div class="tank-game-container">
-            <div class="tank-game-header">
-                <h2>Interactive Canvas Project</h2>
-                <p>An interactive canvas-based project demonstrating graphics and user interaction capabilities with CMU Graphics.</p>
-            </div>
-            <div class="tank-game-iframe-wrapper">
-                <iframe src="https://academy.cs.cmu.edu/sharing/forestGreenPanda7667/embed"></iframe>
+            <!-- Interactive Canvas Container -->
+            <div class="tank-game-container">
+                <div class="tank-game-header">
+                    <h2>Interactive Canvas Project</h2>
+                    <p>An interactive canvas-based project demonstrating graphics and user interaction capabilities with CMU Graphics.</p>
+                </div>
+                <div class="tank-game-iframe-wrapper">
+                    <iframe src="https://academy.cs.cmu.edu/sharing/forestGreenPanda7667/embed"></iframe>
+                </div>
             </div>
         </div>
     </section>
